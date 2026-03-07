@@ -1,4 +1,6 @@
 CREATE DATABASE movie;
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
 USE movie;
 
 CREATE TABLE roles (
@@ -25,10 +27,6 @@ CREATE TABLE movies (
 USE movie;
 
 INSERT INTO roles (name) VALUES ('ADMIN'), ('USER');
-
-INSERT INTO users (username, password_hash, role_id) VALUES 
-('admin_ivan', '$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6L6s57OT67Jm/8m2', 1),
-('user_georgi', '$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6L6s57OT67Jm/8m2', 2); 
 
 
 INSERT INTO movies (title, director, release_year, rating) VALUES 
