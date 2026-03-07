@@ -75,6 +75,15 @@ movie_library/
 
 ---
 
+# Database Schema (ER Diagram)
+
+![ER Diagram](db/er_diagram.png)
+
+---
+
+
+---
+
 # Installation
 
 Clone the repository
