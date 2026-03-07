@@ -14,7 +14,6 @@ def register_user(user:UserCreate):
 
 @router.post("/login")
 def login_user(form_data: OAuth2PasswordRequestForm = Depends()):
-    print(form_data)
     return login(form_data)
 
 

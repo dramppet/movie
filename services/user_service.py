@@ -74,8 +74,6 @@ def login(form_data: OAuth2PasswordRequestForm = Depends()):
 
     token = create_jwt(db_user["username"], db_user["role_id"])
 
-    print(token)
-
     return {"access_token": token, "token_type": "bearer"}
 
 
