@@ -27,5 +27,5 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
 
 def admin_required(user=Depends(get_current_user)):
     if user.get("role_id") != 1:
-        raise HTTPException(status_code=401, detail="Admin only")
+        raise HTTPException(status_code=403, detail="Admin only")
     return user
