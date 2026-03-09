@@ -27,9 +27,9 @@ def create_movie(
 @router.get("/")
 def get_movies(
         title: str = None,
-        raiting: str | None = None
+        rating: str | None = None
 ):
-    return movie_services.get_movies(title, raiting)
+    return movie_services.get_movies(title, rating)
 
 
 @router.get("/{movie_id}", response_model=MovieResponse)
