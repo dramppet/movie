@@ -67,7 +67,9 @@ movie_library/
 │   └── user_service.py
 │
 ├── tests
-│   └── test_movies.py
+│   └── test_enrich_rating.py
+|   └── test_movies_service.py
+|   └── test_user_service.py
 │
 ├── main.py
 └── README.md
@@ -295,21 +297,25 @@ imdbRating
 Run tests with:
 
 ```
-pytest
+unittest
 ```
 
 Example test:
 
 ```
-tests/test_movies.py
+tests/test_enrich_rating.py
+tests/test_movies_service.py
+tests/test_user_service.py
 ```
 
 Tests include:
 
-* Movie creation
-* Fetching movie list
+* Raiting success adn found
+* Missing api key
+* Movie CRUD
+* Movie by Id
 * Authentication validation
-
+* Promote and Demote Admin
 ---
 
 # Error Handling
